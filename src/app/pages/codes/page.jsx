@@ -67,7 +67,7 @@ const page = () => {
   const getOtp = async () => {
     try{
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/codes`);
-      // console.log("API url is " + process.env.NEXT_PUBLIC_API_URL);
+      console.log("API url is " + process.env.NEXT_PUBLIC_API_URL);
       
       const data = await response.json();
       // console.log("data " + data);
